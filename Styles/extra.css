@@ -1,0 +1,147 @@
+.md-typeset ul ul {
+  list-style: none;
+}
+
+.md-typeset ul ul > li::before {
+  content: "-";
+  display: inline-block;
+  margin-left: -1.2em;
+  width: 1.2em;
+}
+
+.md-typeset table {
+  display: table;
+  width: max-content;
+  max-width: 100%;
+  border: 1px solid var(--table-border-color);
+  border-collapse: collapse;
+}
+
+.md-typeset .table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.md-typeset .table-scroll table {
+  max-width: none;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  border: 1px solid var(--table-border-color);
+  white-space: nowrap;
+}
+
+[data-md-color-scheme="default"] {
+  --table-border-color: #000;
+}
+
+[data-md-color-scheme="slate"] {
+  --table-border-color: #fff;
+}
+
+.md-typeset .field-example table tr:not(:first-child) > :nth-child(2) {
+  background-color: rgba(255, 222, 99, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(255, 222, 99, 0.06);
+  color: inherit;
+  font-weight: inherit;
+}
+
+.md-typeset .record-example table tr:nth-child(3) > * {
+  background-color: rgba(255, 222, 99, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(255, 222, 99, 0.06);
+  color: inherit;
+  font-weight: inherit;
+}
+
+.md-typeset .primary-key-example table tr:not(:first-child) > :nth-child(1) {
+  background-color: rgba(255, 222, 99, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(255, 222, 99, 0.06);
+  color: inherit;
+  font-weight: inherit;
+}
+
+.md-typeset .gym-primary-key-example table tr:not(:first-child) > :nth-child(1) {
+  background-color: rgba(255, 222, 99, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(255, 222, 99, 0.06);
+  color: inherit;
+  font-weight: inherit;
+}
+
+.md-typeset .foreign-key-example table tr:not(:first-child) > :nth-child(7) {
+  background-color: rgba(91, 141, 239, 0.16);
+  box-shadow: inset 0 0 0 9999px rgba(91, 141, 239, 0.08);
+  color: inherit;
+  font-weight: inherit;
+}
+
+.md-typeset .field-types-table table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.md-typeset .field-types-table table th:nth-child(2),
+.md-typeset .field-types-table table td:nth-child(2) {
+  min-width: 16rem;
+  max-width: 34rem;
+  white-space: normal;
+}
+
+.md-typeset .relationship-link-example table th,
+.md-typeset .relationship-link-example table td {
+  text-align: center;
+}
+
+.md-typeset .relationship-link-example table tr:nth-child(n + 3) > :nth-child(2) {
+  background-color: rgba(91, 141, 239, 0.16);
+  box-shadow: inset 0 0 0 9999px rgba(91, 141, 239, 0.08);
+}
+
+.md-typeset .relationship-link-example table tr:nth-child(n + 3) > :nth-child(4) {
+  background-color: rgba(255, 222, 99, 0.12);
+  box-shadow: inset 0 0 0 9999px rgba(255, 222, 99, 0.06);
+}
+
+.md-typeset .relationship-key {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0.75rem 0;
+  width: 100%;
+}
+
+.md-typeset .relationship-key span {
+  border: 1px solid var(--table-border-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.md-typeset .relationship-key .foreign-key-chip {
+  background-color: rgba(91, 141, 239, 0.16);
+}
+
+.md-typeset .relationship-key .primary-key-chip {
+  background-color: rgba(255, 222, 99, 0.12);
+}
+
+.md-typeset .relationship-key .relationship-arrow {
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.md-typeset .relationship-link-example table tr:first-child > :nth-child(2),
+.md-typeset .relationship-link-example table tr:nth-child(n + 2) > :nth-child(3) {
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+.md-typeset .relationship-link-example table tr:nth-child(n + 3) > :nth-child(3) {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.md-typeset .relationship-link-example table tr:nth-child(n + 3) > :nth-child(3)::after {
+  content: " ->";
+}
