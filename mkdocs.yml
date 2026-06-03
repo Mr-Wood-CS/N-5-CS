@@ -1,29 +1,10 @@
-site_name: Database Design and Development
+site_name: Computer Systems
 
 nav:
-    - Home: 'index.md'
-    - Database Structure: 
-      - Flat File Databases: '1.0-database-structure.md'
-      - Relational Databases: '1.1-relational-databases.md'
-      - Fields: '1.2-field-types.md'
-      - Primary Keys: '1.3-primary-keys.md'
-      - Foreign Keys: '1.4-foreign-keys.md'
-      - How Tables Link: '1.5-how-tables-link.md'
-    - Analysis:
-      - End User and Functional Requirements: '2.0-analysis.md'
-      - Data Protection: '2.3-General-Data-Protection-Regulation.md'
-    - Design: 
-      - Database Relationships: '3.1-DB-Relationships.md'
-      - Data Dictionairies: '3.2-Data-Dictionaries.md'
-      - Query Design: '3.3-Query-Design.md'
-    - Implementation:
-      - SQL Select: '4.1-SQL-Select.md'
-      - SQL Insert, Update, Delete: '4.2-SQL-Insert.md'
-      - SQL Joins: '4.3-SQL-Equi-Joins.md'
-    - Testing: '5.1-DB-Testing.md' 
-    - Evaluation: '5.2-DB-Evaluation.md' 
-    
-
+    - Data Representation: 
+      - Representing Data: '1.1-number-representation.md'
+      - Binary to Decimal: '1.2-binary-to-decimal.md'
+      - Decimal to Binary: '1.3-decimal-to-binary.md'
 markdown_extensions:
       - admonition
       - pymdownx.details
@@ -53,20 +34,10 @@ theme:
   name: material
   font:
     text: Quicksand
-  palette: 
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
-
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+  palette:
+    scheme: default
+    primary: blue
+    accent: deep orange
   icon:
     admonition:
       note: fontawesome/solid/note-sticky
