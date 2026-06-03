@@ -1,0 +1,16 @@
+__Note__
+
+In database design, each `Table` in a relational database represents an __Entity__ — a real-world object like a Customer or Product.
+
+Each `Field` (or column) in the table represents an __Attribute__ — a property of that entity, such as Name or Price.
+
+This difference is important when designing the structure of your database, even though software like Access may still use the terms __*table*__ and __*field*__.
+
+⚠️ __Don’t confuse a record with an entity__. In a flat file database, each record is one instance of an entity (e.g. one customer). In relational databases, the table represents the entity.
+
+!!! info "Advantages of Using a Relational Database"
+
+    * Avoids data duplication.
+    * Complex queries can be carried out on multiple tables.
+    * Easier to maintain security.
+    * Easier to change/update data.
