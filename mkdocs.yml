@@ -1,6 +1,7 @@
 site_name: Computer Systems
 
 nav:
+    - Home: 'index.md'
     - Data Representation: 
       - Representing Data: '1.1-number-representation.md'
       - Binary to Decimal: '1.2-binary-to-decimal.md'
